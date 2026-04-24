@@ -42,5 +42,4 @@ protocol SensorEventProtocol {
 			TemperatureSensorAvro
 		} payload;
 	}
-
 }
