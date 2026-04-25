@@ -74,4 +74,5 @@ protocol HubEventProtocol {
 			ScenarioRemovedEventAvro
 		} payload;
 	}
+
 }
