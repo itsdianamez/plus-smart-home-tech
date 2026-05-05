@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+    consumer:
+      group-id: collector-group
+      auto-offset-reset: latest
+
+collector:
+  kafka:
+    topics:
+      hubs: telemetry.hubs.v1
+      sensors: telemetry.sensors.v1
